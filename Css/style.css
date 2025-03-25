@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffa502;
+    gap: 20px;
+}
+
+.calculator-container {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    width: 300px;
+    text-align: center;
+
+    & h1 {
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    & .date-input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: #080808;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid orange;
+    }
+
+
+    & .date-input {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+
+
+    & .date-input input {
+        width: 60px;
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        margin-top: -20px;
+    }
+
+
+    & button {
+        background-color: #eee;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+
+    }
+    & button:hover {
+            background-color: #ffa502;
+            color: white;
+        }
+    
+
+
+}
+
+
+
+
+
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    
+
+    & .result-item {
+        width: 82px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #080808;
+        color: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    }
+
+    & .result-label {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    & .result-value {
+        color: #ffa502;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+
+
